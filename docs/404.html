@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cargando...</title>
+    <script>
+      (function () {
+        var repoBase = "/CempedDashboard";
+        var fullPath =
+          window.location.pathname +
+          window.location.search +
+          window.location.hash;
+
+        sessionStorage.setItem("gh-pages-spa-redirect", fullPath);
+        window.location.replace(repoBase + "/");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
